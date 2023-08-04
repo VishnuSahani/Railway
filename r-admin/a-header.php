@@ -18,9 +18,9 @@ if (!($_SESSION['superAdminId'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link href="../fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/custom-style.css">
-    <link href="../fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
 
     <title>Railway</title>

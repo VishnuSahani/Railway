@@ -157,18 +157,18 @@ $("#basic-addon3").click(function(){
 
 
         
-        let reqBody = JSON.stringify({"action":"adminLogin","adminId":username,"adminPassword":password});
+        // let reqBody = JSON.stringify({"action":"adminLogin","adminId":username,"adminPassword":password});
 
         $.ajax({
             type:"POST",
-            url:"http://localhost:8090/Railway/action/adminLoginQuery.php",
-            data:reqBody,
+            url:"./action/adminLoginQuery.php",
+            data:{"action":"adminLogin","adminId":username,"adminPassword":password},
             beforeSend:function(){
                 $("#adminLoginBtn").html("Please wait...").attr("disabled",true)
             },
-            success:function(response){
+            success:function(respo){
                 $("#adminLoginBtn").html("Login").attr("disabled",false)
-                // let response = JSON.parse(respo);
+                let response = JSON.parse(respo);
                 console.log(response)
                 if(response['status']){
 
